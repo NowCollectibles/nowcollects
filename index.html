@@ -138,18 +138,38 @@
   outline: none;
 }
 
-.sidebar-epn {
+.site-wrap {
+  display: flex;
+  max-width: 1100px;
   margin: 2rem auto;
-  text-align: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.sidebar-epn {
+  flex: 0 0 250px;
   padding: 1rem;
   background-color: #f7f9fc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+
   </style>
 </head>
 <body>
+   <div class="site-wrap">
+    <!-- Sidebar -->
+    <aside class="sidebar-epn">
+      <ins class="epn-placement" data-config-id="ffe380587832281871fb1d55"></ins>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
   <h1><a href="https://buycollects.com">BuyCollects (by @NowCollects)</a></h1>
   <p>Your daily blend of sports news and collectible card pickups.</p>
 
@@ -175,11 +195,6 @@
     </a>
   </div>
 
-<!-- eBay Smart Placement Sidebar -->
-<aside class="sidebar-epn">
-  <ins class="epn-placement" data-config-id="ffe380587832281871fb1d55"></ins>
-</aside>
-
   <div class="highlights">
     <div class="check">✅ Timely sports news that actually matters to collectors</div>
     <div class="check">✅ Real card pickups that follow the headlines</div>
@@ -199,7 +214,7 @@
       <a href="guides/how-source-pickups.html">How to Source Pickups</a>
       <time datetime="2025-06-20">Jun 20, 2025</time>
     </li>
-
+  </ul>
   <h2>Recent</h2>
   <ul>
     <li>
@@ -228,9 +243,11 @@
     </li>
     <!-- Add new entries here -->
   </ul>
-
+  </main>
   <footer>
     &copy; 2025 NowCollectibles | Built to track sports-driven collectible buys
   </footer>
+</div> <!-- close site-wrap -->
+
 </body>
 </html>
